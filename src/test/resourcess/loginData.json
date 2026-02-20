@@ -1,0 +1,27 @@
+[
+  {
+    "email": "mateo.garcia@madrid.es",
+    "password": "WrongPassword123",
+    "expectedErrorMessage": "Invalid email or password"
+  },
+  {
+    "email": "y.tanaka@tokyo.jp",
+    "password": " ",
+    "expectedErrorMessage": "Password is required"
+  },
+  {
+    "email": "f.zahra",
+    "password": "DesertWind!786",
+    "expectedErrorMessage": "Please include an '@' in the email address"
+  },
+  {
+    "email": "not.found@atlas.ma",
+    "password": "FoundingFather1776",
+    "expectedErrorMessage": "User not found"
+  },
+  {
+    "email": "",
+    "password": "Eiffel_Tower_75",
+    "expectedErrorMessage": "Email is required"
+  }
+]

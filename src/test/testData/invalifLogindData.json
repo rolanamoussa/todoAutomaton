@@ -1,0 +1,32 @@
+[
+  {
+    "scenario": "Incorrect Password",
+    "description": "Existing user tries to log in with the wrong password.",
+    "email": "john.doe@example.com",
+    "password": "WrongPassword123"
+  },
+  {
+    "scenario": "Non-Existent User",
+    "description": "Trying to log in with an email that was never registered.",
+    "email": "ghost@notfound.com",
+    "password": "SomePassword1!"
+  },
+  {
+    "scenario": "SQL Injection",
+    "description": "Trying to bypass the login screen using SQL commands.",
+    "email": "' OR 1=1 --",
+    "password": "password"
+  },
+  {
+    "scenario": "Case Sensitivity Check",
+    "description": "Checking if the email field is case-sensitive (usually it shouldn't be).",
+    "email": "JOHN.DOE@EXAMPLE.COM",
+    "password": "password123!"
+  },
+  {
+    "scenario": "Brute Force / Account Lockout",
+    "description": "Used to test if the account locks after multiple failed attempts (if implemented).",
+    "email": "john.doe@example.com",
+    "password": "attempt_1"
+  }
+]

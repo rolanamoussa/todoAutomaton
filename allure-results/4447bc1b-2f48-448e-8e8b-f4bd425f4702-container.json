@@ -1,0 +1,1 @@
+{"uuid":"4447bc1b-2f48-448e-8e8b-f4bd425f4702","name":"org.example.SigninTest.signuptest","children":["7f6ab6ed-7ec6-4481-bb96-8eeadd37aac6"],"befores":[{"name":"initDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1771582623721,"stop":1771582624907}],"afters":[],"start":1771582623697,"stop":1771582625221}

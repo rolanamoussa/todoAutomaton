@@ -1,0 +1,1 @@
+{"uuid":"62f1cb72-34ab-4f9c-a5e7-ba81e1f3d0b6","name":"org.example.SigninTest.TestSigninHappyPath","children":["877614be-f53d-4b36-acda-daf10a633134"],"befores":[{"name":"initDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1771525659847,"stop":1771525661029}],"afters":[],"start":1771525659822,"stop":1771525663540}
