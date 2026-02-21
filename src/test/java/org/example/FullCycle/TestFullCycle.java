@@ -10,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import utils.RandomEmailGenerator;
+
 public class TestFullCycle {
 
 
@@ -21,6 +23,7 @@ public class TestFullCycle {
 
     String todoTitle ="Automation Task Todo";
 
+    String randomEmail= RandomEmailGenerator.generateRandomEmail();
     @BeforeClass
         public void initDriver() {
         DriverFactory.initDriver("Chrome");
@@ -32,7 +35,7 @@ public class TestFullCycle {
     @Test (priority=1,dataProvider = "ValidSignupData",dataProviderClass = signUpDataProvider.class)
     public void signUpNewUser(String firstName,String lastName,String email,String password,String confirmPassword){
     signupPage=new signupPage(driver);
-        signupPage.signUp(firstName,lastName,email,password,confirmPassword);
+        signupPage.signUp(firstName,lastName,randomEmail,password,confirmPassword);
     homePage=new homePage(driver);
 
         Assert.assertTrue(homePage.checkLogoutButtonDisplay(), "Signup failed, logout button not found!");
@@ -40,10 +43,10 @@ public class TestFullCycle {
     }
 
     @Test(priority = 2, dependsOnMethods = {"signUpNewUser"}, dataProvider = "validLoginData", dataProviderClass = loginDataProviders.class)
-    public void loginWithValidCredentials( String email, String password) {
+    public void loginWithValidCredentials( String emrandomEmail, String password) {
         driver.get("https://qacart-todo.herokuapp.com/login");
         loginPage = new loginPage(driver);
-        loginPage.Login(email,password);
+        loginPage.Login(randomEmail,password);
 
         homePage = new homePage(driver);
         Assert.assertTrue(homePage.checkLogoutButtonDisplay(), "Login Failed!");
