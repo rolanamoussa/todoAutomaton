@@ -1,37 +1,9 @@
 [
   {
-    "first_name": "Mateo",
-    "last_name": "García",
-    "email": "mateo.garcia@madrid.es",
-    "password": "VivaEspaña_2026",
-    "confirm_password": "VivaEspaña_2026"
-  },
-  {
-    "first_name": "Yuki",
-    "last_name": "Tanaka",
-    "email": "y.tanaka@tokyo.jp",
-    "password": "Sakura#Season99",
-    "confirm_password": "Sakura#Season99"
-  },
-  {
-    "first_name": "Fatima",
-    "last_name": "Zahra",
-    "email": "f.zahra@atlas.ma",
-    "password": "DesertWind!786",
-    "confirm_password": "DesertWind!786"
-  },
-  {
-    "first_name": "Alexander",
-    "last_name": "Hamilton-Smythe",
-    "email": "a.hamilton@heritage.uk",
-    "password": "FoundingFather1776",
-    "confirm_password": "FoundingFather1776"
-  },
-  {
-    "first_name": "Léa",
-    "last_name": "Dubois",
-    "email": "lea.dubois@paris.fr",
-    "password": "Eiffel_Tower_75",
-    "confirm_password": "Eiffel_Tower_75"
+    "firstName": "Rolana",
+    "lastName": "Aliii",
+    "email": "RolanaTest17@gmail.com",
+    "password": "TEST!@#sec",
+    "confirmPassword": "TEST!@#sec"
   }
 ]

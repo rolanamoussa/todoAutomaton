@@ -8,14 +8,14 @@ import java.util.Map;
 public class signUpDataProvider {
 
 
-    private static final String VALID_DATA_PATH = "src/test/resourcess/signupData.jsonn";
+    private static final String VALID_DATA_PATH = "src/test/resourcess/signupData.json";
     private static final String INVALID_DATA_PATH = "src/test/testData/invalidSignupData.json";
 
 
     @DataProvider(name = "ValidSignupData")
     public static Object[][] getValidData() {
         List<Map<String, Object>> dataList = jsonDataReader.readJsonnListOfMaps(VALID_DATA_PATH);
-        Object[][] data = new Object[dataList.size()][5]; // 5 حقول فقط
+        Object[][] data = new Object[dataList.size()][5];
 
         for (int i = 0; i < dataList.size(); i++) {
             data[i][0] = dataList.get(i).get("firstName");

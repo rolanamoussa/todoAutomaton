@@ -1,5 +1,6 @@
 package org.example.page;
 
+import org.example.page.basePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +15,7 @@ public class homePage extends basePage {
     }
 
     //Locators
+
     By logoutButtonLocator = By.xpath("//span[text()='Logout']");
     By addNewTodoButtonLocator = By.xpath("(//button[@aria-label='delete'])[1]");
     By firstDoneCheckboxButtonLocator = By.xpath("(//input[@data-testid='complete-task'])[1]");
@@ -41,6 +43,11 @@ public class homePage extends basePage {
         }else {
             return logoutButton.isDisplayed();
         }
+    }
+    // Method to perform Logout
+    public void clickLogout() {
+        WebElement logoutButton = wait.until(ExpectedConditions.elementToBeClickable(logoutButtonLocator));
+        logoutButton.click();
     }
 
     //Methods to Add New Todo
@@ -81,6 +88,7 @@ public class homePage extends basePage {
         driver.findElement(firstDeleteButtonLocator).click();
     }
 
+
     //Method to check that the todo is deleted
     public boolean checkTodoIsDeleted(String todoTitle){
         String xpathLocator = staticPart1 + todoTitle + staticPart2;
@@ -91,6 +99,7 @@ public class homePage extends basePage {
             return false;
         }
     }
+
 
     //Method to check if the todo is marked as done by checking background color
     public boolean checkTodoBackGroundColor(String backgroundColor){

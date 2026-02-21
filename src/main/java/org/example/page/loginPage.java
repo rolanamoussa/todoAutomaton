@@ -44,7 +44,7 @@ public class loginPage extends basePage {
     }
     //login method
 
-    public void Login (String email, String password){
+    public void Login(String email, String password){
         this.enterEmail(email)
                 .enterPassword(password)
                 .clickLoginButton();

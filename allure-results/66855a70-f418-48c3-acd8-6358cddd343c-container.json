@@ -1,0 +1,1 @@
+{"uuid":"66855a70-f418-48c3-acd8-6358cddd343c","name":"org.example.FullCycle.TestFullCycle","children":["0555c3e0-89cf-475d-8276-ea6e52937726"],"befores":[{"name":"initDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1771694607965,"stop":1771694610675}],"afters":[],"start":1771694607935,"stop":1771694612075}
